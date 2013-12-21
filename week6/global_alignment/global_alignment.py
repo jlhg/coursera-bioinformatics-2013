@@ -39,8 +39,6 @@ def global_alignment(seq_1, seq_2, blosum, indel_penalty):
     score = [[0 for x in range(len(seq_2) + 1)] for x in range(len(seq_1) + 1)]
     backtrack = [[0 for x in range(len(seq_2) + 1)] for x in range(len(seq_1) + 1)]
 
-    score[1][1] = blosum.get(seq_1[0]).get(seq_2[0])
-
     for i in range(1, len(seq_1) + 1):
         score[i][0] = score[i - 1][0] - indel_penalty
 
