@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# Usage: $ ./global_alignment.py <dataset>
+# Usage: $ ./editdist.py <dataset>
 
 import sys
 sys.setrecursionlimit(10000)
