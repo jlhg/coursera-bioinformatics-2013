@@ -50,7 +50,7 @@ def better_bwmatching(bwt, seqs):
         'T': {0: 0},
         'C': {0: 0},
         'G': {0: 0},
-        '$': {0: 0}
+        '$': {0: 0},
     }
     for i, j in enumerate(lstcol):
         j = remove_digit(j)
